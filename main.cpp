@@ -2,6 +2,7 @@
 #include <string>
 #include <memory>
 #include "User.hpp"
+#include "WordCounter.hpp"
 
 void* operator new(size_t bytes) {
 	std::cout << "Alocando: " << bytes << "bytes" << std::endl;
@@ -18,6 +19,8 @@ void displayPtr(std::shared_ptr<User> user) {
 
 int main() {
 	
+	std::cout << "---------------------------------------------" << std::endl;
+
 	std::string name = "Gabriel Thomazoni & Matheus Silva";
 	std::cout << "---------------------------------------------" << std::endl;
 
@@ -34,6 +37,11 @@ int main() {
 	std::cout << "---------------------------------------------" << std::endl;
 	
 	displayPtr(user);
+	std::cout << "---------------------------------------------" << std::endl;
+
+	User u2("David Almeida Nunez");
+	std::cout << "---------------------------------------------" << std::endl;
+	WordCounter wC(u2);
 
 	return 0;
 

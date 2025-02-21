@@ -9,6 +9,8 @@ private:
 
 public:
 	User(std::string name);
-	std::string getName();
+	User(const User&);
+	std::string getName() const;
+	
 };
 
