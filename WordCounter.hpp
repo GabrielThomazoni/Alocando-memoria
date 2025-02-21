@@ -7,7 +7,7 @@ class WordCounter
 {
 private:
 	User text;
-	int wordsCounted = 0;
+	size_t wordsCounted = 0;
 
 public:
 	WordCounter(const User&);

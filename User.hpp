@@ -1,16 +1,18 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "String.hpp"
 
 class User{
 
 private:
-	std::string name;
+	String name;
 
 public:
-	User(std::string name);
+	User(const String& name);
+	User(String&& name);
 	User(const User&);
-	std::string getName() const;
-	
+	String getName() const;
+
 };
 

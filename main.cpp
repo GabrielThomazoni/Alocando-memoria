@@ -17,6 +17,7 @@ void displayPtr(std::shared_ptr<User> user) {
 	std::cout << user->getName() << std::endl;
 }
 
+
 int main() {
 	
 	std::cout << "---------------------------------------------" << std::endl;
@@ -41,7 +42,8 @@ int main() {
 
 	User u2("David Almeida Nunez");
 	std::cout << "---------------------------------------------" << std::endl;
-	WordCounter wC(u2);
+
+	//WordCounter wC(u2);
 
 	return 0;
 

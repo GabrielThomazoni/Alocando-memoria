@@ -133,6 +133,7 @@
     <ClCompile Include="WordCounter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="String.hpp" />
     <ClInclude Include="User.hpp" />
     <ClInclude Include="WordCounter.hpp" />
   </ItemGroup>
